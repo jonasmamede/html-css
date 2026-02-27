@@ -1,0 +1,24 @@
+main{
+    display: flex;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    
+}
+
+article{
+    width: 30rem;
+}
+
+aside{
+    margin: 5px;
+    border: 3px solid black;
+}

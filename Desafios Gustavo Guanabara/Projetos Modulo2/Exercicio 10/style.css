@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('../fontes/idroid.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+    
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.238);
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+body{
+    background-color: rgba(127, 243, 162, 0.757);
+}
+
+p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  
+}
+
+header{
+    background: linear-gradient(to bottom, #60fbc0, #276d50 ,#0a4828 ); 
+    color: white;
+    padding: 1rem;
+    min-height: 150px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.376);
+
+    
+}
+
+header > h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+    font-size: 2.5rem;
+    
+}
+
+header >p{
+    text-align: center;
+    font-weight: 100;
+    
+
+    
+}
+
+nav > a{
+    margin: 14px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+    transition-duration: .5s;
+    max-width: 600px;
+}
+
+
+
+main{
+    background-color: white;   
+    padding: 16px;
+    min-width: 300px;
+   max-width: 1000px;
+    margin: auto;
+    border-radius: 0 0 17px 17px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.564);
+
+}     
+
+main  p{
+    margin: 15px 0;
+    line-height: 2em;
+    text-indent: 30px;
+}
+
+main>img{
+    width: 100%;
+}
+main>h1{
+    font-family: 'MinhaFonte', Arial, sans-serif;
+    color: rgb(0, 81, 0);
+    font-size: 2.2rem;
+}
+
+main>h2{
+    color: rgb(0, 81, 0);
+    background:linear-gradient(to left, rgb(255, 255, 255), #bdfbda) ;
+    font-size: 1.8rem ;
+    font-family: 'MinhaFonte';
+
+    text-shadow: none;
+}
+
+
+
+span > a{
+    color: #00823f;
+}
+
+nav> a:hover{
+    background-color: #20ae64;
+    
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.bugdroid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.back-video{
+    padding: 20px;
+    margin: 0px -16px 30px -20px;
+    background-color: #00823f;
+    position: relative;
+    padding-bottom: 57%;
+}
+
+.back-video>iframe{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Lista ajeitada */
+
+.extra{
+    background-color: #a7f2cb8a;
+    border-radius: 13px;
+}
+
+.extra>p{
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.h3-extra{
+    font-size: 20px;
+    border-radius: 13px 13px 0 0;
+    padding: 10px;
+    color: white;
+    background-color: #48a376bc ;
+}
+
+
+.listas {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+
+}
+
+
+
+.primary-list,
+.second-list {
+    flex: 1;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.extra ul {
+    list-style-position: inside;
+    list-style-image: url("https://img.icons8.com/material-sharp/13/checkmark--v1.png");
+    padding-left: 0;
+}
+
+
+footer {
+  background-color: #2f8f5e; /* cor do footer */
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  padding: .1px ;
+}
+
+footer > p{
+    text-shadow: none;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    
+    color: rgb(33, 30, 30);
+    
+}
+
+.content-footer{
+    color: white;
+}
+
+#link-git{
+    color: white;
+}

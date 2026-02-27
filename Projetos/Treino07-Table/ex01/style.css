@@ -1,0 +1,9 @@
+table{
+    border: 8px solid red;
+    border-radius: 10px;
+    
+}
+
+td, th{
+    padding: 4px;
+}

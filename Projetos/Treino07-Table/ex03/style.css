@@ -1,0 +1,5 @@
+td, th{
+    padding: 4px;
+    border: 1px solid black;
+    text-align: center;
+}

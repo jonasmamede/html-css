@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PetCare — Petshop & Serviços</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- CSS incorporado (obrigatório) -->
+  <style>
+    /* Regras rápidas e helpers */
+    :root {
+      --accent: #ff6b6b;
+      --accent-dark: #d94b4b;
+      --muted: #6b7280;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --radius: 12px;
+      --maxwidth: 1100px;
+      --glass: rgba(255, 255, 255, 0.7);
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    }
+
+    /* Pequeno reset */
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg), #eef2ff)
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    /* estilo do vídeo responsivo */
+    .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1 style="display:flex;align-items:center;margin:0"><span class="logo">🐾</span> <big>PetCare</big></h1>
+        <p class="tagline"><em>Seu pet com carinho e saúde</em></p>
+      </div>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-container">
+      <article class="hero-text">
+        <h2 style="color:var(--accent);text-shadow:0 2px 6px rgba(0,0,0,0.08)">Bem-vindo ao <strong>PetCare</strong>
+        </h2>
+        <p>Oferecemos banho, tosa, vacinação e planos de saúde para <em>seus melhores amigos</em>. <mark>Profissionais
+            qualificados</mark> e ambiente seguro.</p>
+        <p style="margin-top:1rem">Agende online e ganhe <small>10% de desconto</small> no primeiro serviço!</p>
+        <a class="btn" href="#agendamento">Agendar agora</a>
+      </article>
+
+      <aside class="hero-media">
+        <img
+          src="https://imgs.search.brave.com/_EUBy9ouKj5ZG-YV6AgGp8GxU9CQVrUdk5ngd0y1zBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMi12/aWRhZGViaWNoby5n/bGJpbWcuY29tLzdN/WHY5eWdTT0dyOUFO/ZUxVdWpiTmdyUjNY/ST0vMHgwOjEyMDB4/OTAwLzk4NHgwL3Nt/YXJ0L2ZpbHRlcnM6/c3RyaXBfaWNjKCkv/aS5zMy5nbGJpbWcu/Y29tL3YxL0FVVEhf/ZmI2MjM1NzljZDQ3/NDgwM2FlZGJiYmJh/ZTAxNGFmNjgvaW50/ZXJuYWxfcGhvdG9z/L2JzLzIwMjIvUi9u/L05zQTNyRlNiQ2tX/ck9tNkJEbWNRLzIw/MjItMDMtMDgtaW1n/My1nYXRvcy1zZW0t/cGVsb3MtZGVzY3Vi/cmEtNi1yYWNhcy1k/ZS1mZWxpbm9zLXBl/bGFkb3Mtc2l0ZS5q/cGVn"
+          alt="Cachorro feliz" />
+      </aside>
+    </section>
+
+    <section id="servicos" class="container services">
+      <h3>Nossos serviços</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Banho & Tosa</h4>
+          <p><strong>Higiene completa</strong> com shampoos dermatológicos e tosa profissional.</p>
+        </article>
+        <article class="card">
+          <h4>Vacinação</h4>
+          <p>Controle e prevenção — <em>vacinas atualizadas</em> conforme calendário sanitario.</p>
+        </article>
+        <article class="card">
+          <h4>Check-up</h4>
+          <p>Exames rápidos e atendimento veterinário preventivo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container media">
+      <h3>Galeria & Vídeo</h3>
+      <div class="media-grid">
+        <img
+          src="https://imgs.search.brave.com/_DaCO6O1Wd8ZBIvI10Q3Jo2hKyFQZowUsNpXvuqt8aA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbTEu/YW1pbm9hcHBzLmNv/bS82Mjg5L2NjYzA0/ZjIxNDQ2NGE0MTZh/OGEyZjJjOGFjNmUz/ZWJlMTUzMjlmZDdf/aHEuanBn"
+          alt="Gato brincando">
+        <img
+          src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7d7f0d7c73f6b3b4b8e7c8d1a2f2c9b0"
+          alt="Cachorro dormindo">
+        <div class="video-wrap">
+          <!-- vídeo incorporado (YouTube) -->
+          <iframe width="560" height="315" src="https://youtu.be/67yRh98ayrw?si=wof71FoJX3xN6NGT"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="agendamento" class="container schedule">
+      <h3>Agendamento</h3>
+      <p>Preencha o formulário para agendar um horário. <ins>Atendimento rápido</ins> e confirmações por email.</p>
+
+      <form class="form" action="#" method="post">
+        <label>Nome completo <input type="text" name="nome" required></label>
+        <label>Email <input type="email" name="email" placeholder="seu@exemplo.com" required></label>
+        <label>Telefone <input type="tel" name="telefone" placeholder="(99) 99999-9999" required></label>
+        <label>Pesquisa (como nos conheceu) <input type="search" name="origem" placeholder="Pesquisar..."></label>
+        <label>Site do tutor (opcional) <input type="url" name="site" placeholder="https://"></label>
+        <label>Idade do pet (anos) <input type="number" name="idade" min="0" max="50"></label>
+        <label>Arquivo (vacina/comprovante) <input type="file" name="arquivo"></label>
+        <label>Observações <textarea name="obs" rows="3"></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Enviar agendamento</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="planos" class="container plans">
+      <h3>Planos e Preços</h3>
+      <p>Escolha o plano ideal para o seu pet — transparencia nos preços.</p>
+
+      <table class="plans-table">
+        <caption>Tabela de Planos PetCare</caption>
+        <thead>
+          <tr>
+            <th>Plano</th>
+            <th>Serviços</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Essencial</td>
+            <td>Banho simples, tosa básica</td>
+            <td><del>R$ 79</del> <ins>R$ 69</ins></td>
+          </tr>
+          <tr>
+            <td>Completo</td>
+            <td>Banho, tosa, limpeza de ouvidos</td>
+            <td>R$ 129</td>
+          </tr>
+          <tr>
+            <td>Saúde+</td>
+            <td>Vacinação anual + check-up</td>
+            <td>R$ 199 <small>*/mês</small></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="note"><mark>Promoção:</mark> Inscreva-se e ganhe banho grátis no mês de boas-vindas.</p>
+    </section>
+
+    <section id="info" class="container info">
+      <h3>Sobre Banho, Tosa e Vacinação</h3>
+      <article>
+        <p>O <strong>banho</strong> inclui esfoliação suave, aplicação de condicionador e secagem adequada.</p>
+        <p><em>Tosa</em> — cortamos conforme o padrão da raça ou conforme necessidade do tutor.</p>
+        <p><small>Vacinação</small> — trabalhamos com o cartão de vacinas, atualizando e orientando sobre protocolos.
+        </p>
+        <p>Observação: <del>Atendimento 24h</del> <ins>Atendimento das 8h às 20h</ins>.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contato" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>PetCare</h4>
+        <p>Rua das Canoas, 97 • Cidade: Fortaleza • Numero para contato: (99) 99999-9999</p>
+      </div>
+      <aside>
+        <h5>Horário</h5>
+        <p>Seg–Sáb: 8:00–20:00 <br><small>Domingos plantão reduzido</small></p>
+      </aside>
+    </div>
+    <div class="credits container">
+      <p><small>© <span id="year"></span> PetCare - Todos os direitos reservados</small></p>
+    </div>
+    <script>
+      // pequeno script apenas para preencher ano no rodapé
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+
+</html>
+=======
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PetCare — Petshop & Serviços</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- CSS incorporado (obrigatório) -->
+  <style>
+    /* Regras rápidas e helpers */
+    :root {
+      --accent: #ff6b6b;
+      --accent-dark: #d94b4b;
+      --muted: #6b7280;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --radius: 12px;
+      --maxwidth: 1100px;
+      --glass: rgba(255, 255, 255, 0.7);
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    }
+
+    /* Pequeno reset */
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg), #eef2ff)
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    /* estilo do vídeo responsivo */
+    .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1 style="display:flex;align-items:center;margin:0"><span class="logo">🐾</span> <big>PetCare</big></h1>
+        <p class="tagline"><em>Seu pet com carinho e saúde</em></p>
+      </div>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <article class="hero-text">
+        <h2 style="color:var(--accent);text-shadow:0 2px 6px rgba(0,0,0,0.08)">Bem-vindo ao <strong>PetCare</strong>
+        </h2>
+        <p>Oferecemos banho, tosa, vacinação e planos de saúde para <em>seus melhores amigos</em>. <mark>Profissionais
+            qualificados</mark> e ambiente seguro.</p>
+        <p style="margin-top:1rem">Agende online e ganhe <small>10% de desconto</small> no primeiro serviço!</p>
+        <a class="btn" href="#agendamento">Agendar agora</a>
+      </article>
+
+      <aside class="hero-media">
+        <!-- imagem do pet (mídia) -->
+        <img
+          src="https://imgs.search.brave.com/_EUBy9ouKj5ZG-YV6AgGp8GxU9CQVrUdk5ngd0y1zBA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMi12/aWRhZGViaWNoby5n/bGJpbWcuY29tLzdN/WHY5eWdTT0dyOUFO/ZUxVdWpiTmdyUjNY/ST0vMHgwOjEyMDB4/OTAwLzk4NHgwL3Nt/YXJ0L2ZpbHRlcnM6/c3RyaXBfaWNjKCkv/aS5zMy5nbGJpbWcu/Y29tL3YxL0FVVEhf/ZmI2MjM1NzljZDQ3/NDgwM2FlZGJiYmJh/ZTAxNGFmNjgvaW50/ZXJuYWxfcGhvdG9z/L2JzLzIwMjIvUi9u/L05zQTNyRlNiQ2tX/ck9tNkJEbWNRLzIw/MjItMDMtMDgtaW1n/My1nYXRvcy1zZW0t/cGVsb3MtZGVzY3Vi/cmEtNi1yYWNhcy1k/ZS1mZWxpbm9zLXBl/bGFkb3Mtc2l0ZS5q/cGVn"
+          alt="Cachorro feliz" />
+      </aside>
+    </section>
+
+    <section id="servicos" class="container services">
+      <h3>Nossos serviços</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Banho & Tosa</h4>
+          <p><strong>Higiene completa</strong> com shampoos dermatológicos e tosa profissional.</p>
+        </article>
+        <article class="card">
+          <h4>Vacinação</h4>
+          <p>Controle e prevenção — <em>vacinas atualizadas</em> conforme calendário sanitario.</p>
+        </article>
+        <article class="card">
+          <h4>Check-up</h4>
+          <p>Exames rápidos e atendimento veterinário preventivo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container media">
+      <h3>Galeria & Vídeo</h3>
+      <div class="media-grid">
+        <img
+          src="https://imgs.search.brave.com/_DaCO6O1Wd8ZBIvI10Q3Jo2hKyFQZowUsNpXvuqt8aA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbTEu/YW1pbm9hcHBzLmNv/bS82Mjg5L2NjYzA0/ZjIxNDQ2NGE0MTZh/OGEyZjJjOGFjNmUz/ZWJlMTUzMjlmZDdf/aHEuanBn"
+          alt="Gato brincando">
+        <img
+          src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7d7f0d7c73f6b3b4b8e7c8d1a2f2c9b0"
+          alt="Cachorro dormindo">
+        <div class="video-wrap">
+          <!-- vídeo incorporado (YouTube) -->
+          <iframe width="560" height="315" src="https://youtu.be/67yRh98ayrw?si=wof71FoJX3xN6NGT"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="agendamento" class="container schedule">
+      <h3>Agendamento</h3>
+      <p>Preencha o formulário para agendar um horário. <ins>Atendimento rápido</ins> e confirmações por email.</p>
+
+      <form class="form" action="#" method="post">
+        <label>Nome completo <input type="text" name="nome" required></label>
+        <label>Email <input type="email" name="email" placeholder="seu@exemplo.com" required></label>
+        <label>Telefone <input type="tel" name="telefone" placeholder="(99) 99999-9999" required></label>
+        <label>Pesquisa (como nos conheceu) <input type="search" name="origem" placeholder="Pesquisar..."></label>
+        <label>Site do tutor (opcional) <input type="url" name="site" placeholder="https://"></label>
+        <label>Idade do pet (anos) <input type="number" name="idade" min="0" max="50"></label>
+        <label>Arquivo (vacina/comprovante) <input type="file" name="arquivo"></label>
+        <label>Observações <textarea name="obs" rows="3"></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Enviar agendamento</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="planos" class="container plans">
+      <h3>Planos e Preços</h3>
+      <p>Escolha o plano ideal para o seu pet — transparencia nos preços.</p>
+
+      <table class="plans-table">
+        <caption>Tabela de Planos PetCare</caption>
+        <thead>
+          <tr>
+            <th>Plano</th>
+            <th>Serviços</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Essencial</td>
+            <td>Banho simples, tosa básica</td>
+            <td><del>R$ 79</del> <ins>R$ 69</ins></td>
+          </tr>
+          <tr>
+            <td>Completo</td>
+            <td>Banho, tosa, limpeza de ouvidos</td>
+            <td>R$ 129</td>
+          </tr>
+          <tr>
+            <td>Saúde+</td>
+            <td>Vacinação anual + check-up</td>
+            <td>R$ 199 <small>*/mês</small></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="note"><mark>Promoção:</mark> Inscreva-se e ganhe banho grátis no mês de boas-vindas.</p>
+    </section>
+
+    <section id="info" class="container info">
+      <h3>Sobre Banho, Tosa e Vacinação</h3>
+      <article>
+        <p>O <strong>banho</strong> inclui esfoliação suave, aplicação de condicionador e secagem adequada.</p>
+        <p><em>Tosa</em> — cortamos conforme o padrão da raça ou conforme necessidade do tutor.</p>
+        <p><small>Vacinação</small> — trabalhamos com o cartão de vacinas, atualizando e orientando sobre protocolos.
+        </p>
+        <p>Observação: <del>Atendimento 24h</del> <ins>Atendimento das 8h às 20h</ins>.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contato" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>PetCare</h4>
+        <p>Rua das Canoas, 97 • Cidade: Fortaleza • Numero para contato: (99) 99999-9999</p>
+      </div>
+      <aside>
+        <h5>Horário</h5>
+        <p>Seg–Sáb: 8:00–20:00 <br><small>Domingos plantão reduzido</small></p>
+      </aside>
+    </div>
+    <div class="credits container">
+      <p><small>© <span id="year"></span> PetCare - Todos os direitos reservados</small></p>
+    </div>
+    <script>
+      // pequeno script apenas para preencher ano no rodapé
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+
+</html>
+>>>>>>> 142a1a27d7ea1002603da6216a4ee13eb61fcbce

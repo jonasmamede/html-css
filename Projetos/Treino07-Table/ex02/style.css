@@ -1,0 +1,8 @@
+td, th{
+    padding: 4px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
+}

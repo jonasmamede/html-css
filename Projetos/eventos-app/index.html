@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eventos App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Eventos</h1>
+    <div id="session-area"></div>
+  </header>
+
+  <nav class="tabs">
+    <button data-view="list" class="active">Eventos</button>
+    <button data-view="create">Criar Evento</button>
+    <button data-view="profile">Meu Perfil</button>
+    <button data-view="dashboard">Coordenação</button>
+  </nav>
+
+  <main id="app">
+    <section id="view-list" class="view"></section>
+    <section id="view-create" class="view hidden"></section>
+    <section id="view-profile" class="view hidden"></section>
+    <section id="view-dashboard" class="view hidden"></section>
+  </main>
+
+  <div id="modals"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

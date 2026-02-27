@@ -1,0 +1,10 @@
+div {
+    border: 10px solid;
+    border-color: red;
+    width: 100%;
+    height: auto;
+}
+img {
+    width: inherit;
+    height: inherit;
+}

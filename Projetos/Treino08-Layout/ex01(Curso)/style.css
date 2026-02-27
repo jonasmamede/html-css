@@ -1,0 +1,25 @@
+#principal{
+    color: aqua;
+    font-size: 32pt;
+}
+
+.secundario{
+    color: red;
+    text-align: center;
+}
+
+#especial{
+    color: green;
+}
+
+.container{
+    background-color: aquamarine;
+    display: flex;
+}
+
+p.secundario{
+    color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1cm;
+    background-color: violet;
+}

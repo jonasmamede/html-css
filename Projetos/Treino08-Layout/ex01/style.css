@@ -1,0 +1,12 @@
+header{
+    background-color: darkslategray;
+}
+
+main{
+    text-align: center;
+    margin: 8px;
+}
+
+footer{
+    font-size: small;
+}
