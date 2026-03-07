@@ -35,8 +35,18 @@
         </a>
       </td>
     </tr>
+    <td>🐾 Site Pet-Shop</td>
+      <td>Site de petshop fictício para praticar layout e estilização com HTML e CSS. Trabalho do 1º ano do Ensino Médio do curso Técnico.</td>
+      <td>
+        <a href="Projetos/projeto Wendel/index.html">
+          Acessar
+        </a>
+      </td>
+    </tr>
   </tbody>
 </table>
+
+
 
 <hr>
 
